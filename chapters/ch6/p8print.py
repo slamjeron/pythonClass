@@ -1,14 +1,20 @@
-def printAll(seq):
-    if seq:
+import time
+
+def printAll(seq,count):#{
+    if seq:#{
         print(seq[0])
-        printAll(seq[1:])
+        print(count)
+        count += 1
+        printAll(seq[1:],count)
+    #}
+#}
 
-
+start_time = time.time()
 seq = ['dose', 'this', 'word']
-
-printAll(seq)
+printAll(seq,0)
+print('the loop took ',time.time()-start_time)
 
 '''
 this code works as expected it prints every element in the 
-sequence.
+sequence. there is no hiden cost t
 '''

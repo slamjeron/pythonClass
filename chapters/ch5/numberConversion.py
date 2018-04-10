@@ -14,21 +14,23 @@ def repToDecimal(value, base):
     exponent = len(value) - 1
     for digit in value:
         try:
-            digit = int(digit)
+            number = int(digit)
         except ValueError:
             if digit.upper() in conversionDictionary:
-                digit = conversionDictionary[digit.upper()]
+                number = conversionDictionary[digit.upper()]
             else:
                 print(digit, 'is not a valid value.')
                 input('Press ENTER to exit.')
                 exit()
-        converted_value = digit * base ** exponent
+        if number>base:
+            print('invalid number')
+            return
+        converted_value = number * base ** exponent
         converted_total = converted_total + converted_value
         exponent = exponent - 1
     print("The integer value is", converted_total)
-    input('Press ENTER to exit.')
     exit()
-
+    
 
 # this is the start of the program
 def main():
