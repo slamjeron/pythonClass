@@ -1,12 +1,6 @@
 import random
 
-articles = ('A', 'THE',)
-nouns = ('BOY', 'GIRL', 'BAT', 'BALL',)
-verbs = ('HIT', 'SAW', 'LIKED')
-prepositions = ('WITH', 'BY')
 variable = 0
-
-
 def getWords(file_name):
     text_file = open('files/' + file_name + '.txt')
     return [x.strip('\n') for x in text_file.readlines()]

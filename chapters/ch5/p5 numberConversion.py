@@ -1,8 +1,7 @@
 # Letter converter
 import os
-
-conversionDictionary = {'A': 10, 'B': 11, 'C': 12, 'D': 12, 'E': 14, 'F': 15}
-
+conversionDictionary = {}
+conversionDictionary = {'A': 10, 'B': 11, 'C': 12, 'D': 13, 'E': 14, 'F': 15}
 
 # uses the conversion dictionary to change letters to numbers
 # if the value is not a number else the number is changed to
