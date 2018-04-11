@@ -43,11 +43,13 @@ print('(',10,0,3,')')
 for i in myrange(10,0,-3):
 	print(i)
 print()
-print('(',0,10,-3,')')
+# the start value must be larger than stop value if the step is a nebgitive
+print('(',0,10,-3,') this will not work')
 for i in myrange(0,10,-3):
 	print(i)
 print()
-print('(',10,0,3,')')
+# the start value must be smaller than the stop value if step is positive
+print('(',10,0,3,') this will not work')
 for i in myrange(10,0,3):
 	print(i)
 print()

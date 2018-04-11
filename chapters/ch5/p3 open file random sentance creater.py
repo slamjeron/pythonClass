@@ -28,8 +28,8 @@ def main():
         print(sentence())
 
 
-articles = getWords('articles')
-nouns = getWords('nouns')
-prepositions = getWords('preposition')
-verbs = getWords('verbs')
+articles = tuple(getWords('articles'))
+nouns = tuple(getWords('nouns'))
+prepositions = tuple(getWords('preposition'))
+verbs = tuple(getWords('verbs'))
 main()

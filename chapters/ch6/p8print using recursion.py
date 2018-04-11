@@ -16,5 +16,6 @@ print('the loop took ',time.time()-start_time)
 
 '''
 this code works as expected it prints every element in the 
-sequence. there is no hiden cost t
+sequence. there is no hiden cost is it alocates more memory in the call stack
+than the normal loop.
 '''

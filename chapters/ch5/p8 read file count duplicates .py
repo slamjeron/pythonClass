@@ -22,7 +22,7 @@ for x in words:
             count += 1
 
     words = deleat(words, x)
-    newList.add(x + ' ' + str(count))
+    newList.add('('+x + ') was located ' + str(count)+' times')
 
 newList = sorted(newList)
 
