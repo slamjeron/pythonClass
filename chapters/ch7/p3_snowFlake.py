@@ -2,15 +2,16 @@ import turtle
 import math
 
 # Get the screen size and set some scaling
+depth =int(input('enter the level: '))
 wn = turtle.Screen()
 wx = wn.window_width() * .5
 wh = wn.window_height() * .5
 base_triangle_length = 2.0 / math.sqrt(3.0) * wh
 
-# Parameters of the Koch triangle
-depth = 5
+
 
 # Set up the turtle
+
 Koch = turtle.Turtle()
 Koch.speed(50 * (depth + 1))
 Koch.penup()

@@ -1,7 +1,0 @@
-The twentieth century Dutch artist Piet Mondrian developed a style
-of abstract painting that exhibited simple recursive patterns.
-To generate such a pattern with a computer, one would begin with
-a filled rectangle
-
-get the width and hight of the page
-place the turtal in the right corner of the page
