@@ -11,17 +11,26 @@ class account:
         self._lname = lname
         self._accountNum = accountnum
         self._ballance = ballance
+
+    def __str__(self):
+        return 'first name ', self._fname, ' last name ', self._lname, ' account number ', self._accountNum, ' ballance ', self._ballance
+
+    def saveString(self):
+        return self._fname, ',', self._lname, ',', self._accountNum, ',', self._ballance
+
+
 accounts = list()
 
-def addAcount(fname='john', lname='do', accountNum=00000, ballance=0, accounts=list() ):
-    accounts.append(account(fname,lname,accountNum,ballance))
+
+def addAccount(fname='john', lname='do', accountNum=00000, ballance=0, accounts=list()):
+    accounts.append(account(fname, lname, accountNum, ballance))
     acSave(accounts)
-    print('you are creating an acount belonging to ',fname,' ',lname,' with the account number ', accountNum,' and a balance of ', ballance)
+    print('you are creating an acount belonging to ', fname, ' ', lname, ' with the account number ', accountNum,
+          ' and a balance of ', ballance)
 
 
 def delleatAcount(fname, lname, acountnum, accounts=list()):
-
-    index=findAcount(fname,lname,accountnum)
+    index = findAcount(fname, lname, accountnum)
     accounts.remove(index)
 
     print("are you sure you want to deleat account", acountnum, 'belonging to ', fname, ' ', lname)
